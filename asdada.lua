@@ -9,7 +9,7 @@ local FunstuffPage = MainUI.AddPage("Utilities")
 local AutoBuyPage = MainUI.AddPage("Quick Buy")
 local TargetPage = MainUI.AddPage("Target")
 local AnimationsPage = MainUI.AddPage("Animations")
-local CreditsPage = MainUI.AddPage("Seany")
+local CreditsPage = MainUI.AddPage("Credits")
 
 -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
 
