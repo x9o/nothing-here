@@ -12,10 +12,6 @@ local GodPage = MainUI.AddPage("Godmode")
 local autofarm = MainUI.AddPage("Autofarms")
 local AnimationsPage = MainUI.AddPage("Animations")
 local CreditsPage = MainUI.AddPage("Credits")
--- // Notifs
-
-game.StarterGui:SetCore("SendNotification", {Title = "Dimag X", Text = "Dimag X was founded by Dimag16 in 2022", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Alright We Winning!"})
-game.StarterGui:SetCore("SendNotification", {Title = "Dimag X", Text = "Made by dylann#0009 and jokerr#9999", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright They Are Pro!"})
 
 -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
 
@@ -2370,8 +2366,8 @@ local CreditsButton = CreditsPage.AddButton("dylann#0009 - Developer", function(
     setclipboard("dylann#0009") 
 end)
 
-local CreditsButton = CreditsPage.AddButton("Dimag16#1616 - Owner", function()
-    setclipboard("Dimag16#1616") 
+local CreditsButton = CreditsPage.AddButton("xolo - Owner", function()
+    setclipboard("idkman") 
 end)
 
 local TargetButton = TargetPage.AddButton("Target UI", function()
@@ -2533,7 +2529,7 @@ DisableMod = false
 if ifMod[player.UserId] then
     IsMod = true
     DisableMod = true
-    game.StarterGui:SetCore("SendNotification", {Title = "Dimag X", Text = "Mod Perms Granted, thanks for buying!", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright, Thank you!"})
+    game.StarterGui:SetCore("SendNotification", {Title = "xoloware", Text = "Mod Perms Granted, thanks for buying!", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright, Thank you!"})
 else
     IsMod = false
 end
