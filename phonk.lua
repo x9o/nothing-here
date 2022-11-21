@@ -2146,7 +2146,7 @@ local SecondButton = FunstuffPage.AddButton("Super Jump (H to toggle, 'Time eras
         end
     end)	
 end)
-local SecondButton = FunstuffPage.AddButton("Fake macro (Z)", function()
+local SecondButton = FunstuffPage.AddButton("Fake macro (C)", function()
     plr = game:GetService('Players').LocalPlayer
         down = true
          
@@ -2165,8 +2165,8 @@ local SecondButton = FunstuffPage.AddButton("Fake macro (Z)", function()
         end
          
         function onSelected(mouse)
-            mouse.KeyDown:connect(function(z) if c:lower()=="z"then onButton1Down(mouse)end end)
-            mouse.KeyUp:connect(function(z) if c:lower()=="z"then onButton1Up(mouse)end end)
+            mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
+            mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
         end
         onSelected(game.Players.LocalPlayer:GetMouse())
     end
