@@ -6,14 +6,18 @@ local CombatPage = MainUI.AddPage("Combat")
 local teleportPage = MainUI.AddPage("Teleports")
 local AimlockPage = MainUI.AddPage("Aimlock")
 local FunstuffPage = MainUI.AddPage("Utilities")
-local AutoBuyPage = MainUI.AddPage("Buy")
+local AutoBuyPage = MainUI.AddPage("Quick Buy")
 local TargetPage = MainUI.AddPage("Target")
 local GodPage = MainUI.AddPage("Godmode")
 local autofarm = MainUI.AddPage("Autofarms")
 local AnimationsPage = MainUI.AddPage("Animations")
-local CreditsPage = MainUI.AddPage("idk")
+local CreditsPage = MainUI.AddPage("Credits")
+-- // Notifs
 
--- // TOGGLE (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
+game.StarterGui:SetCore("SendNotification", {Title = "Dimag X", Text = "Dimag X was founded by Dimag16 in 2022", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "Alright We Winning!"})
+game.StarterGui:SetCore("SendNotification", {Title = "Dimag X", Text = "Made by dylann#0009 and jokerr#9999", Icon = "rbxassetid://505845268", Duration = 9, Button1 = "Alright They Are Pro!"})
+
+-- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
 
 local Mouse = game.Players.LocalPlayer:GetMouse()
 local Closed = true
@@ -25,6 +29,7 @@ if Closed == true then
         game.CoreGui["xoloware"].Enabled = false
     else
         Closed = true
+            game.CoreGui["xoloware"].Enabled = true
         end
     end
 end)
@@ -2145,8 +2150,8 @@ local SecondButton = FunstuffPage.AddButton("Super Jump (H to toggle, 'Time eras
         end
     end)	
 end)
-local SecondButton = FunstuffPage.AddButton("Fake macro (C)", function()
-   plr = game:GetService('Players').LocalPlayer
+local SecondButton = FunstuffPage.AddButton("Fake macro (Z)", function()
+    plr = game:GetService('Players').LocalPlayer
         down = true
          
         function onButton1Down(mouse)
@@ -2164,8 +2169,8 @@ local SecondButton = FunstuffPage.AddButton("Fake macro (C)", function()
         end
          
         function onSelected(mouse)
-            mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
-            mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
+            mouse.KeyDown:connect(function(z) if c:lower()=="z"then onButton1Down(mouse)end end)
+            mouse.KeyUp:connect(function(z) if c:lower()=="z"then onButton1Up(mouse)end end)
         end
         onSelected(game.Players.LocalPlayer:GetMouse())
     end
