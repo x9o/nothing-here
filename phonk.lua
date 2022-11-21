@@ -11,7 +11,7 @@ local TargetPage = MainUI.AddPage("Target")
 local GodPage = MainUI.AddPage("Godmode")
 local autofarm = MainUI.AddPage("Autofarms")
 local AnimationsPage = MainUI.AddPage("Animations")
-local CreditsPage = MainUI.AddPage("Credits")
+local CreditsPage = MainUI.AddPage("Seany")
 
 -- // TOGGLE! (DONT FUCK UP MY FUCKING TOGGLE NIGGER)
 
@@ -403,7 +403,7 @@ local FirstToggle = CombatPage.AddToggle("Anti-Slow", false, function(gh)
     end
 end)
 
-local FirstToggle = CombatPage.AddToggle("Fist Reach!", false, function(e)
+local FirstToggle = CombatPage.AddToggle("Fist Aura", false, function(e)
     if e == true then
         game:GetService('RunService'):BindToRenderStep("Reach", 0 , function()
             local success, err = pcall(function()
@@ -432,7 +432,7 @@ local FirstToggle = CombatPage.AddToggle("Fist Reach!", false, function(e)
     end
 end)
 
-local FirstToggle = CombatPage.AddButton("Tool Reach!", function()
+local FirstToggle = CombatPage.AddButton("Tool Reach", function()
     for i, v in pairs(game:GetService"Players".LocalPlayer.Character:GetChildren()) do
         if v:isA("Tool") then
             local a = Instance.new("SelectionBox", v.Handle)
@@ -585,7 +585,7 @@ end)
 local SecondButton = teleportPage.AddButton("Gun Shop [Uphill]", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(481.925, 48.1008, -621.23)
 end)
-local SecondButton = teleportPage.AddButton("Gun Shop [Armor]", function()
+local SecondButton = teleportPage.AddButton("Gun Shop [Downhill]", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-580.27, 8.34504, -734.832)
 end)
 local SecondButton = teleportPage.AddButton("Bank", function()
@@ -606,7 +606,7 @@ end)
 
 ---------------
 
-local SecondButton = AimlockPage.AddButton("Dimag Aimlock (Q)", function()
+local SecondButton = AimlockPage.AddButton("Aimlock (Q)", function()
     _G.KEY = "q"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
