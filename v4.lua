@@ -9,7 +9,6 @@ local FunstuffPage = MainUI.AddPage("Utilities")
 local AutoBuyPage = MainUI.AddPage("Quick Buy")
 local TargetPage = MainUI.AddPage("Target")
 local GodPage = MainUI.AddPage("God Stuff")
-local autofarm = MainUI.AddPage("Autofarms")
 local AnimationsPage = MainUI.AddPage("Animations")
 
 -- // TOGGLE
