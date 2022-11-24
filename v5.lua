@@ -177,6 +177,7 @@ local MainToggle = MainPage.AddToggle("No Clip", false, function(t)
         game:GetService('RunService'):UnbindFromRenderStep("crash")
     end
 end)
+
 local MainButton = MainPage.AddButton("Hide User", function()
 	if game.Players.LocalPlayer.Character:FindFirstChild("In-gameMask") then
         game.Players.LocalPlayer.Character:FindFirstChild("In-gameMask"):FindFirstChildWhichIsA("Model"):Destroy()
@@ -191,6 +192,7 @@ local xdfporn = MainPage.AddButton("Force Reset", function()
         end
     end
 end)
+
 local MainButton = MainPage.AddButton("Korblox", function()
 	local ply = game.Players.LocalPlayer
 		local chr = ply.Character
