@@ -1,3 +1,5 @@
+game.StarterGui:SetCore("SendNotification", {Title = "Executed", Text = "Aimlock working", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "great news"})
+
 _G.KEY = "q"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
