@@ -1,4 +1,4 @@
-game.StarterGui:SetCore("SendNotification", {Title = "Executed", Text = "Aimlock working", Icon = "rbxassetid://505845268", Duration = 10, Button1 = "great news"})
+game.StarterGui:SetCore("SendNotification", {Title = "Executed", Text = "Aimlock working", Icon = "rbxassetid://10590477450", Duration = 10, Button1 = "great news"})
 
 -- gay
 
