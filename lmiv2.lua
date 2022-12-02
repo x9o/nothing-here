@@ -20,7 +20,7 @@ if Closed == true then
     end
 end)
 
-local godbutton = GodPage.AddButton("Full God", function()
+local godbutton = GodPage.AddButton("Melee God", function()
     local localPlayer = game:GetService('Players').LocalPlayer;
     local localCharacter = localPlayer.Character;
     localCharacter:FindFirstChildWhichIsA('Humanoid').Health = 0;
