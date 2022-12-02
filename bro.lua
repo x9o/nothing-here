@@ -9,7 +9,7 @@ local Mouse = game.Players.LocalPlayer:GetMouse()
 local Closed = true
 Mouse.KeyDown:connect(function(key)
  
-if key == "v" then
+if key == "'" then
 if Closed == true then
     Closed = false
         game.CoreGui["xoloware"].Enabled = false
