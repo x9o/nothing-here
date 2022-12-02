@@ -19,32 +19,6 @@ if Closed == true then
     end
 end)
 
-local FirstButton = MainPage.AddButton("Fake macro (C)", function()
-   plr = game:GetService('Players').LocalPlayer
-        down = true
-         
-        function onButton1Down(mouse)
-            down = true
-            while down do
-                if not down then break end
-                local char = plr.Character
-                char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 190
-                wait()
-            end
-        end
-         
-        function onButton1Up(mouse)
-            down = false
-        end
-         
-        function onSelected(mouse)
-            mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
-            mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
-        end
-        onSelected(game.Players.LocalPlayer:GetMouse())
-    end
-)
-
 local SecondButton = MainPage.AddButton("Aimlock (Q)", function()
     _G.KEY = "q"
     _G.PART = "LowerTorso"
@@ -310,6 +284,32 @@ local SecondButton = MainPage.AddButton("Aimlock (Q)", function()
      accomidationfactor = PingNumber / 1000 + _G.PRED
     end
 end)
+
+local FirstButton = MainPage.AddButton("Fake macro (C)", function()
+   plr = game:GetService('Players').LocalPlayer
+        down = true
+         
+        function onButton1Down(mouse)
+            down = true
+            while down do
+                if not down then break end
+                local char = plr.Character
+                char.HumanoidRootPart.Velocity = char.HumanoidRootPart.CFrame.lookVector * 190
+                wait()
+            end
+        end
+         
+        function onButton1Up(mouse)
+            down = false
+        end
+         
+        function onSelected(mouse)
+            mouse.KeyDown:connect(function(c) if c:lower()=="c"then onButton1Down(mouse)end end)
+            mouse.KeyUp:connect(function(c) if c:lower()=="c"then onButton1Up(mouse)end end)
+        end
+        onSelected(game.Players.LocalPlayer:GetMouse())
+    end
+)
 
 local MainButton = MainPage.AddButton("Fly (X)", function()
     local plr = game.Players.LocalPlayer
