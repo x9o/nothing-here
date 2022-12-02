@@ -19,7 +19,6 @@ if Closed == true then
     end
 end)
 
-
 local SecondButton = MainPage.AddButton("Aimlock (Q)", function()
     _G.KEY = "q"
     _G.PART = "LowerTorso"
