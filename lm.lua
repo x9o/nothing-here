@@ -8,7 +8,7 @@ local Mouse = game.Players.LocalPlayer:GetMouse()
 local Closed = true
 Mouse.KeyDown:connect(function(key)
  
-if key == "-" then
+if key == "b" then
 if Closed == true then
     Closed = false
         game.CoreGui["xoloware"].Enabled = false
