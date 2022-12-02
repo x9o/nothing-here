@@ -2,6 +2,7 @@ local UILibrary = loadstring(game:HttpGet("https://raw.githubusercontent.com/blo
 
 local MainUI = UILibrary.Load("xoloware")
 local MainPage = MainUI.AddPage("Main")
+local GodPage = MainUI.AddPage("God Stuff")
 -- // TOGGLE
 
 local Mouse = game.Players.LocalPlayer:GetMouse()
