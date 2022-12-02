@@ -1,4 +1,6 @@
-function()
+game.StarterGui:SetCore("SendNotification", {Title = "ok", Text = "seany", Icon = "rbxassetid://505845268", Duration = 2, Button1 = "ok bro"})
+
+local SecondButton = AimlockPage.AddButton("Dimag Aimlock (Q)", function()
     _G.KEY = "q"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
@@ -199,3 +201,67 @@ function()
             end
         end
     )
+    
+    
+    
+    game.Players.LocalPlayer.Chatted:Connect(
+        function(Chat)
+            if Chat == "P+" then
+    
+    
+                _G.PRED = _G.PRED+0.001
+    
+    
+    
+            end
+        end
+    )
+    
+    game.Players.LocalPlayer.Chatted:Connect(
+        function(Chat)
+            if Chat == "P-" then
+    
+                _G.PRED = _G.PRED-0.001
+    
+    
+    
+            end
+        end
+    )
+    
+    
+    --[[
+    while wait() do
+        local ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+        local Value = tostring(ping)
+        local pingValue = Value:split(" ")
+        local PingNumber = pingValue[1]
+        
+        accomidationfactor = PingNumber / 1000 + _G.PRED
+         if getClosestPlayerToCursor().Character.Humanoid.Jump == true and AimlockTarget.Character.Humanoid.FloorMaterial == Enum.Material.Air then
+            _G.PART = "RightFood"
+            accomidationfactor = _G.AIR
+        else
+            getClosestPlayerToCursor().Character:WaitForChild("Humanoid").StateChanged:Connect(function(old,new)
+                if new == Enum.HumanoidStateType.Freefall then
+                    _G.PART = "RightFood"
+                    accomidationfactor = _G.AIR
+                else
+                    _G.PART = "UpperTorso"
+                    accomidationfactor = PingNumber / 1000 + _G.PRED
+                end
+            end)
+        end
+    end
+    
+    ]]
+    
+    while wait() do
+        local ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+        local Value = tostring(ping)
+        local pingValue = Value:split(" ")
+        local PingNumber = pingValue[1]
+        
+     accomidationfactor = PingNumber / 1000 + _G.PRED
+    end
+end)
