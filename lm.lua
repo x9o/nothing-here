@@ -19,7 +19,7 @@ if Closed == true then
     end
 end)
 
-local SecondButton = FunstuffPage.AddButton("Fake macro (C)", function()
+local SecondButton = MainPage.AddButton("Fake macro (C)", function()
    plr = game:GetService('Players').LocalPlayer
         down = true
          
@@ -44,7 +44,6 @@ local SecondButton = FunstuffPage.AddButton("Fake macro (C)", function()
         onSelected(game.Players.LocalPlayer:GetMouse())
     end
 )
-
 
 local SecondButton = MainckPage.AddButton("Aimlock (Q)", function()
     _G.KEY = "q"
