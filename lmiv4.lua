@@ -4,6 +4,7 @@ local MainUI = UILibrary.Load("xoloware")
 local MainPage = MainUI.AddPage("Main")
 local GodPage = MainUI.AddPage("God Stuff")
 local AnimationsPage = MainUI.AddPage("Animations")
+local AutoBuyPage = MainUI.AddPage("Buy")
 -- // TOGGLE
 
 local Mouse = game.Players.LocalPlayer:GetMouse()
@@ -20,6 +21,22 @@ if Closed == true then
         end
     end
 end)
+
+for i,v in pairs(game:GetService("Workspace").Ignored.Shop:GetChildren()) do
+    local FirstButton = AutoBuyPage.AddButton(v.Name, function()
+        local Pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
+        local Teleport = v:FindFirstChild("Head")
+        if Teleport then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Teleport.CFrame
+            local CD = v:FindFirstChild("ClickDetector")
+            if CD then
+				wait(0.75)
+                fireclickdetector(CD)
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
+            end
+        end
+    end)
+end
 
 local AnimationsButton = AnimationsPage.AddButton("Tryhard", function()
     local Animate = game.Players.LocalPlayer.Character.Animate
@@ -2351,22 +2368,6 @@ local SecondButton = FunstuffPage.AddButton("Super Jump (H to toggle, 'Time eras
     end)	
 end)
 
----------------
-for i,v in pairs(game:GetService("Workspace").Ignored.Shop:GetChildren()) do
-    local FirstButton = AutoBuyPage.AddButton(v.Name, function()
-        local Pos = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame
-        local Teleport = v:FindFirstChild("Head")
-        if Teleport then
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Teleport.CFrame
-            local CD = v:FindFirstChild("ClickDetector")
-            if CD then
-				wait(0.75)
-                fireclickdetector(CD)
-                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = Pos
-            end
-        end
-    end)
-end
 local walkonwalls = FunstuffPage.AddButton("Walk On Walls [z]", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/WalkOnWalls/main/YesEpic", true))()
 end)
