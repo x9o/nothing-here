@@ -4,8 +4,7 @@ _G.Toxic = false
 local words = 
 	{
 		"⚠️ Follow Bot ⚠️ (Beta),
-		"Type !stop to stop",
-		"Type !random to follow someone random",
+		"Commands: !stop, !random",
   }
 
 local player = game:GetService("Players").LocalPlayer
