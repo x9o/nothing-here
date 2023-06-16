@@ -5,7 +5,7 @@ local words =
 	{
 		"⚠️ Follow Bot ⚠️ (Beta),
 		"Type !stop to stop",
-		"Type !target to follow someone else",
+		"Type !random to follow someone random",
   }
 
 local player = game:GetService("Players").LocalPlayer
