@@ -1,4 +1,4 @@
-local key = "u" -- the toxic key
+local key = "y" -- the toxic key
 _G.Toxic = false
 
 local words = 
