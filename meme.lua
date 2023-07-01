@@ -5,6 +5,7 @@ local words =
 	{
 		"I will spread your cheeks lil bro 👐😭🙏",
 		"I better not see you on the streets lil bro 😭🙏",
+	        "😱😱😱",
   }
 
 local player = game:GetService("Players").LocalPlayer
