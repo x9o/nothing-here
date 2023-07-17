@@ -257,8 +257,8 @@ local FirstButton = MainPage.AddButton("Inf-Jump", function()
     end)
 end)
 
-local SecondButton = MainPage.AddButton("Aimlock (Q)", function()
-    _G.KEY = "q"
+local SecondButton = MainPage.AddButton("Aimlock (Z)", function()
+    _G.KEY = "z"
     _G.PART = "LowerTorso"
     _G.PRED = 0.037
     _G.Frame = Vector3.new(0,0.53,0)
