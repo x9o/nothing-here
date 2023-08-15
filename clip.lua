@@ -4,7 +4,6 @@ _G.Toxic = false
 local words = 
 	{
 		"omg so scared😱😱😱",
-	        "im shivering 😱😱😱😱",
   }
 
 local player = game:GetService("Players").LocalPlayer
