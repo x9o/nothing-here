@@ -196,7 +196,7 @@ local CameraAimbot = {
 
 	Resolver = false, 
 
-	JumpOffset = 0.06, 
+	JumpOffset = 0, 
 	RealJumpOffset = nil, 
 
 	HitPart = "HumanoidRootPart", 
@@ -206,7 +206,7 @@ local CameraAimbot = {
 	AirPart = "LowerTorso", 
 	AirCheckType = "Once in Air", 
 
-	AutoPred = true, 
+	AutoPred = false, 
 	Notify = false, 
 
 	KoCheck = false, 
